@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #1f1f1f; /* Dark charcoal background */
+    background-color: #1f1f1f;
     color: #fff;
     padding: 2rem 0;
     text-align: center;
@@ -18,9 +18,9 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 3rem; /* Increased font size */
-    font-weight: 700; /* Bold font weight */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header-content {
@@ -31,8 +31,8 @@ header h1 {
 }
 
 .header-content p {
-    font-size: 1.2rem; /* Increased font size */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .contact-info {
@@ -41,8 +41,21 @@ header h1 {
 
 .contact-info p {
     margin: 0.5rem 0;
-    font-size: 1.1rem; /* Increased font size */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.contact-info a:hover {
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .social-links {
@@ -54,14 +67,14 @@ header h1 {
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
-    font-size: 1.2rem; /* Increased font size */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     transition: color 0.3s, text-shadow 0.3s;
 }
 
 .social-links a:hover {
     color: #4CAF50;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Darker text shadow on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 nav {
@@ -89,13 +102,13 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     transition: color 0.3s, text-shadow 0.3s;
 }
 
 nav ul li a:hover {
     color: #4CAF50;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Darker text shadow on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 .container {
     max-width: 1200px;
