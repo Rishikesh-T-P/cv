@@ -16,11 +16,14 @@ body {
 }
 
 .profile-photo {
-    width: 100%; /* Ensure the image takes up the entire width of its container */
-    max-width: 200px; /* Adjust as needed */
-    display: block; /* Ensure image is not affected by surrounding elements */
-    margin-right: 20px; /* Add some spacing between the image and text */
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin-right: 20px;
+    border-radius: 50%; /* Make the image round */
+    overflow: hidden; /* Hide overflowing content */
 }
+
 
 .about-text {
     flex: 3; /* Take up 3/4 of the available space */
