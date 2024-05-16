@@ -1,26 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     color: #333;
+    line-height: 1.6;
 }
 
 .profile-photo-container {
-    max-width: 20px; /* Adjust the desired maximum width */
-    max-height: 20px; /* Adjust the desired maximum height */
-    overflow: hidden; /* This will hide any part of the image that exceeds the specified dimensions */
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .profile-photo {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
     text-align: center;
     position: relative;
     z-index: 10;
@@ -28,19 +32,21 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
 header p {
-    margin: 0.5rem 0;
+    margin: 1rem 0;
+    font-size: 1.2rem;
 }
 
 nav {
-    background: #333;
-    padding: 0.5rem 0;
-    position: fixed;
-    width: 100%;
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -52,56 +58,68 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #4CAF50;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    padding-top: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
 }
 
 .section {
-    padding: 2rem 0;
+    padding: 3rem 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .section h2 {
     color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-.skills, .projects, .organizations {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.skills,
+.projects,
+.organizations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
-.skills div, .projects div, .organizations div {
-    flex: 1 1 30%;
-    margin: 1rem;
-    background: #fff;
-    padding: 1rem;
+.skills div,
+.projects div,
+.organizations div {
+    background-color: #fff;
+    padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.skills div:hover, .projects div:hover, .organizations div:hover {
+.skills div:hover,
+.projects div:hover,
+.organizations div:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     position: relative;
     z-index: 10;
 }
