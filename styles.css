@@ -157,14 +157,6 @@ nav ul li a:hover {
     border-collapse: collapse;
 }
 
-.skill-table tr {
-    transition: background-color 0.3s;
-}
-
-.skill-table tr:hover {
-    background-color: #f0f0f0;
-}
-
 .skill-table td {
     padding: 1rem;
     border: 1px solid #ddd;
@@ -172,7 +164,7 @@ nav ul li a:hover {
     position: relative;
 }
 
-.skill-table td .skill-popup {
+.skill-popup {
     display: none;
     position: absolute;
     top: -50px;
@@ -217,3 +209,4 @@ footer {
     position: relative;
     z-index: 10;
 }
+
