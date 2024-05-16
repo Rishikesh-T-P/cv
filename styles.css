@@ -6,6 +6,7 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
 .about-content {
     display: flex;
     align-items: center; /* Vertically center items */
@@ -25,11 +26,9 @@ body {
     object-fit: cover;
 }
 
-
 .about-text {
     flex: 3; /* Take up 3/4 of the available space */
 }
-
 
 header {
     background-color: #1f1f1f;
@@ -134,6 +133,7 @@ nav ul li a:hover {
     color: #4CAF50;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -149,6 +149,17 @@ nav ul li a:hover {
     color: #4CAF50;
     font-size: 2rem;
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skill-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skill-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
     text-align: center;
 }
 
